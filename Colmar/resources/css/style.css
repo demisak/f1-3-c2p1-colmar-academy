@@ -1,0 +1,511 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/iJWKBXyIfDnIV7nBrXyw023e.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  color: hsl(0, 0%, 30%);
+  background-color: hsl(0, 0%, 100%);
+  overflow-x: hidden;
+}
+.main2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1em;
+  color: hsl(0, 0%, 30%);
+}
+.bold {
+  font-weight: 700;
+}
+.color1 {
+  font-weight: 300;
+  color: hsl(203, 52%, 49%);
+}
+.color2 {
+  font-weight: 300;
+  color: hsl(0, 50%, 50%);
+}
+.color3 {
+  font-weight: 300;
+  color: hsl(98, 58%, 47%);
+}
+.color4 {
+  font-weight: 300;
+  color: hsl(54, 80%, 52%);
+}
+.container {
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.sidebar {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+.banner {
+  display: flex;
+  justify-content: left;
+  padding-left: 2rem;
+}
+.bannermedia {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+.bannermedia img, video {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    padding: 0;
+  }
+  .banner {
+    flex-direction: column;
+    padding: 0;
+  }
+  .bannermedia {
+    width: 100%;
+  }
+  .bannermedia img {
+    margin-top: 0;
+  }
+  .sidebar {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+}
+/* HEADER */
+header {
+  height: 5rem;
+  font-size: 1.5rem;
+}
+header img {
+  height: 3.5rem;
+  width: auto;
+}
+header.container {
+  justify-content: space-between;
+}
+a {
+  color: hsl(0, 0%, 30%);
+  text-decoration: none;
+  font-family: "Rubik";
+  font-size: 1.14rem;
+  margin-right: 1rem;
+}
+.headermenu :hover{
+  color: hsl(203, 35%, 36%);
+}
+span.mobileheader  {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  nav.headermenu {
+    display: none;
+  }
+  span.mobileheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
+  }
+}
+/*BANNER #1*/
+.first {
+  background-color:  hsl(0, 0%, 85%);
+}
+.main {
+  justify-content: center;
+}
+#slogan {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1em;
+  color: hsl(0, 0%, 30%);
+  width: 90%;
+  margin-bottom: 1.5rem;
+}
+#slogandescription {
+  font-size: 1.5rem;
+  font-family: "Lora";
+  width: 80%;
+  color: hsl(0, 0%, 50%); 
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.25px;
+}
+.start {
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 85%);
+  text-align: center;
+  width: 90%;
+  padding: 1rem 0;
+  background-color: hsl(203, 52%, 49%);
+}
+.start:hover{
+  background-color: hsl(203, 35%, 36%);
+}
+@media only screen and (max-width: 770px) {
+  #slogandescription {
+    font-size: 2rem;
+    font-weight: 500;
+    width: 90%;
+  }
+  #start {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    background-color: hsl(0, 1%, 33%);
+    color:  hsl(0, 0%, 40%);
+    letter-spacing: 1px;
+  }
+}
+/*BANNER #2 and Sidebar*/
+.practice {
+  margin: 0 0 1.5rem 0;
+}
+#bannerdescription2 {
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+#emmanuel {
+  font-size: .9rem;
+  margin-bottom: 2rem;
+}
+.container.sidebar.second {
+  border-left: solid 1px hsl(0, 0%, 100%);
+  padding-left: 0;
+  margin-left: 2rem;
+}
+.container.sidebar.second .items:first-child {
+  border-bottom: solid 4px hsl(0, 0%, 100%);
+  margin-top: 2rem;
+}
+.container.sidebar.second .items:last-child {
+  background-color: hsl(0, 0%, 100%);
+}
+.itemimage.orientation {
+  margin-top: 0;
+}
+.sidebartitle.orientation{
+  padding-top: 0;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.guest{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: hsl(0, 0%, 85%);
+}
+.itemimage {
+  width: 37%;
+  height: auto;
+  margin: 1rem;
+}
+.itemimage img {
+  width: 100%;
+  height: auto;
+}
+.mobilepic {
+  display: none;
+}
+.sidebartitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 63%;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+.sidebartitle span {
+  font-weight: 300;
+  line-height: 1.5;
+  color: hsl(0, 0%, 50%);
+}
+.sidebartitle span:first-child {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 30%);
+}
+.sidebartitle span.readmore {
+  color: hsl(203, 52%, 49%);
+  font-weight: 500;
+}
+a.readmore {
+  color: hsl(203, 52%, 49%);
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+a.readmore:hover{
+  color: hsl(203, 35%, 36%);
+}
+@media only screen and (max-width: 700px) {
+  .readingbanner {
+    display: none;
+  }
+  .second.sidebar.container {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .second.sidebar.container .items:first-child {
+    border-bottom: none;
+  }
+  .second.sidebar.container .items:last-child {
+    background-color: hsl(0, 0%, 100%);
+    padding-bottom: 2rem;
+  }
+  .itemimage.orientation {
+    margin-bottom: 1rem;
+  }
+  .sidebartitle.orientation{
+    padding-bottom: 1rem;
+  }
+  .sidebartitle.campus {
+    padding-bottom: 1rem;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid 2px hsl(0, 0%, 100%);
+    margin: 0 2rem;
+  }
+  .itemimage {
+    width: 100%;
+    margin: 0;
+  }
+  .itemimage img {
+    width: 100%;
+    display: none;
+
+  }
+  img.mobilepic {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .sidebartitle {
+    width: 90%;
+    padding-left: 2rem;
+  }
+  .guest{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid 2px hsl(0, 0%, 85%);
+    margin: 0 2rem;
+  }
+}
+/*BANNER #3*/
+.learning {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: hsl(0, 0%, 85%);
+}
+.options {
+  display: flex;
+  justify-content: center;
+  padding: 0 4.5rem 0 4.5rem;
+  background-color: hsl(0, 0%, 85%);
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.secondrow {
+  padding-bottom: 2rem;
+}
+.b3 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  background-color: hsl(0, 0%, 93%);
+}
+.options .b3:last-child {
+  margin-right: 0;
+}
+.b3 img {
+  width: 100%;
+  height: auto;
+}
+.b3 span {
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+.courses {
+  padding-bottom: .5rem;
+  color: hsl(0, 0%, 50%);
+}
+.description {
+  font-size: 1rem;
+  color: hsl(0, 0%, 50%);
+}
+.subject {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+.mobileoptions {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+.learning {
+  background-color: hsl(0, 0%, 93%);
+}
+.options {
+  flex-direction: column;
+  background-color: hsl(0, 0%, 93%);
+  padding: 0 1rem 1rem 1rem;
+  border-bottom: solid 2px hsl(0, 0%, 90%);
+}
+.secondrow {
+  display: none;
+}
+.b3 {
+  display: none;
+}
+.mobileoptions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.mobileoptions a {
+  background-color: hsl(0, 0%, 85%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.mobileoptions a:hover{
+  background-color: hsl(203, 52%, 49%);
+}
+}
+/*Thesis BANNER #4*/
+.thesis {
+  text-align: center;
+  margin-top: 2rem;
+}
+.container.sidebar.fourth .items:first-child {
+  background-color: hsl(0, 0%, 85%);
+  margin-top: 2rem;
+}
+#title3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  color: hsl(0, 0%, 30%);
+}
+#description3 {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 50%);
+}
+.bottom {
+  padding-bottom: 2rem;
+}
+@media only screen and (max-width: 700px) {
+  .bottom span {
+    display: none;
+  }
+  .fourth {
+    display: none;
+  }
+}
+/*FOOTER*/
+footer{
+  width: 100%;
+  height: 4rem;
+  background-color: hsl(0, 0%, 85%);
+  padding-top: 1rem;
+  font-family: Rubik;
+}
+.footer {
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family:"Rubik";
+}
+.social i:hover{
+  color: hsl(203, 52%, 49%);
+}
+.details {
+  margin-right: 3rem;
+}
+.details a:hover{
+  color: hsl(203, 52%, 49%);
+}
+.details span:first-child {
+  padding-right: 1rem;
+}
+.details a{
+  font-size: 0.9rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  height: 4rem;
+  width: 100%;
+}
+@media only screen and (max-width: 700px) {
+  footer span {
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
+  }
+  .details {
+    display: none;
+  }
+  .social i{
+    display:none;
+  }
+}
